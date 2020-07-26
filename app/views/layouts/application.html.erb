@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= yield(:title) %> | Hoffie </title>
+    <title><%= yield(:title) %> | Hoffice </title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -12,7 +12,7 @@
   <body>
 
     <header class="headSec">
-      <h1>Simons Office</h1>
+      <h1>Hoffice</h1>
       
       <ul>
         <li><%= link_to "Home", "/"  %></li>
@@ -20,6 +20,16 @@
         <li><%= link_to "Help", help_path %></li>
         
       </ul>
+      <% if user_signed_in? %>
+
+      <li><%= link_to 'Edit Profile', edit_user_registration_path %></li>
+      <li><%= link_to 'Sign out', destroy_user_session_path, :method => :delete %></li>
+      <% else %>
+      <li><%= link_to 'Register', new_user_registration_path %></li>
+      <li><%= link_to 'Sign in', new_user_session_path %></li>
+      
+      r<% end %>
+
       
       
     </header>
