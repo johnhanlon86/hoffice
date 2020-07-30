@@ -15,5 +15,13 @@ Rails.application.routes.draw do
 
   get '/cart', to: 'cart#index'
 
+  get '/cart/:id', to: 'cart#add'
+  
+  get '/clearcart', to: 'cart#clearCart'
+  
+  get '/cart/remove/:id' => 'cart#remove'
+
+
+
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
