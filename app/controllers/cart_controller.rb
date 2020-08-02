@@ -97,6 +97,13 @@ before_action :authenticate_user!
     @orderitem = @order.orderitems.build(:item_id => item.id, :title => item.title, :description => item.description, :quantity => quantity, :price=> item.price)
     @orderitem.save
     end
+
+    @orders = Order.last
+
+    @orderitems = Orderitem.where(order_id: Order.last)
+    # Clear cart when order is made.
+    session[:cart] = nil
+
   end
 
 end 

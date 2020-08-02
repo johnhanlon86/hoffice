@@ -1,11 +1,18 @@
 Rails.application.routes.draw do
     
     
-  resources :orders
-  get 'cart/index'
-  devise_for :users
+  resources :orders do 
+    resources:orderitems
+  end
+ 
+  devise_for :users do
+    resources :orders
+  end
+
   resources :items
-  
+
+  get 'cart/index'
+
   root 'static_pages#home'  
     
   get '/products' => "items#index"
