@@ -26,5 +26,7 @@ Rails.application.routes.draw do
 
   get '/cart/decrease/:id' => 'cart#decrease'
 
+  get '/checkout' => 'cart#createOrder'
+
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
