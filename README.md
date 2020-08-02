@@ -1,5 +1,7 @@
 # README
 
+***Pro Tip! Go to Extensions on the side bar menu and download GitLens!
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
