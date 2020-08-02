@@ -87,6 +87,7 @@ before_action :authenticate_user!
    
     # Step 2: Create a new order and associate it with the current user
     @order = @user.orders.build(:order_date => DateTime.now, :status => 'Pending')
+    # Save to order database table.
     @order.save
    
     # Step 3: For each item in the cart, create a new item on the order!!
