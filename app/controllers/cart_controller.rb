@@ -2,6 +2,8 @@ class CartController < ApplicationController
   def index
   end
 
+before_action :authenticate_user!
+
   def add
     # get the Id of the product
     id = params[:id]
