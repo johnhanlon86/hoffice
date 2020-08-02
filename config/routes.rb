@@ -21,9 +21,9 @@ Rails.application.routes.draw do
   
   get '/cart/remove/:id' => 'cart#remove'
 
+  get '/cart/increase/:id' => 'cart#increase'
 
-
-
+  get '/cart/decrease/:id' => 'cart#decrease'
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
