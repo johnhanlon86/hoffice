@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
     
     
+  resources :orders
   get 'cart/index'
   devise_for :users
   resources :items
