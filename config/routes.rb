@@ -35,5 +35,7 @@ Rails.application.routes.draw do
 
   get '/checkout' => 'cart#createOrder'
 
+  get '/paid/:id' => 'static_pages#paid'
+
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
