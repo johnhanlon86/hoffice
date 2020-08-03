@@ -4,12 +4,15 @@ class OrdersController < ApplicationController
   # GET /orders
   # GET /orders.json
   def index
-    @orders = Order.all
+    #@orders = Order.all
+    @user = User.find(current_user.id)
+    @orders = @user.orders.all
   end
 
   # GET /orders/1
   # GET /orders/1.json
   def show
+    @orderitems = Orderitem.all
   end
 
   # GET /orders/new
