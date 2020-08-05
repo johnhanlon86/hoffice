@@ -1,12 +1,20 @@
 <% provide(:title, "Home") %>
 
+
+
+
 <div class="mainCont">
 <%= image_tag("hoffice logo.png", alt: "Welcome Logo", :class => "welcomeIm") %>    
-    
+
+
     
 <h1>Home</h1>
 <p>Welcome to Hoffice!</p>
 <br>
 <br>
 <p>Work Remotely in Style</p>
+<br>
+
+<%=render 'layouts/categories'%> 
+
 </div>

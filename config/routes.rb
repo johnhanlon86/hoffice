@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
     
     
+  resources :categories
   resources :orders do 
     resources:orderitems
   end
@@ -34,8 +35,12 @@ Rails.application.routes.draw do
   get '/cart/decrease/:id' => 'cart#decrease'
 
   get '/checkout' => 'cart#createOrder'
-
+  
   get '/paid/:id' => 'static_pages#paid'
+
+  get 'category/:title', to: 'static_pages#category'
+
+  #root :to => 'site#home'
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

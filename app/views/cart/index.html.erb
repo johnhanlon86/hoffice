@@ -27,10 +27,9 @@
 
 </tr>
 
-<tr>
-    <% total += quantity * item.price %>
-</tr>
+<% total += quantity * item.price %>
 <% end %>
+
 <tr>
     <td>
     Grand Total: <%= number_to_currency(total, :unit => "€") %>
