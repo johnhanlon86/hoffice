@@ -5,8 +5,28 @@ class StaticPagesController < ApplicationController
 
   def help
   end
+  
+
+  def admin 
+    if current_user.admin?
+     # @users = User.all
+
+    else 
+
+      redirect_to "/"
+
+  end
+
+  end
 
   def about 
+    #if current_user.admin?
+
+    #else 
+    #current_user.update_attribute :admin, true
+      #redirect_to "/"
+  #end 
+
   end
 
   def category

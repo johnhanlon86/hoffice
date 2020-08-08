@@ -38,7 +38,11 @@ Rails.application.routes.draw do
   
   get '/paid/:id' => 'static_pages#paid'
 
+  get '/admin'=> 'static_pages#admin'
+
   get 'category/:title', to: 'static_pages#category'
+
+  post '/search' => 'items#search'
 
   #root :to => 'site#home'
 

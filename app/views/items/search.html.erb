@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
+<% if @items.length == 0  %><br /><h2>Sorry - no results !</h2><% end %>
 
-<% if @items.length == 0  %><br /><h2>There are currently no products in this category</h2><% end %>
 
 
 <div id="itemsContainer">
@@ -39,3 +39,5 @@
 </div>
 <% end %>
 <br>
+
+
