@@ -21,8 +21,8 @@ COLOUR PALLETTE:
 Primary Colour: #5c64a6
 Secondary Colour: #7ed957 
 
-FONT: Sniglet
-https://fonts.google.com/specimen/Sniglet?preview.text=HOFFICE&preview.text_type=custom
+FONT: Lobster
+https://fonts.google.com/specimen/Lobster?preview.text=Hoffice+Furniture&preview.text_type=custom#pairings
 
 */
 
@@ -39,11 +39,11 @@ https://fonts.google.com/specimen/Sniglet?preview.text=HOFFICE&preview.text_type
 
 p {
   line-height: 20px;
-  font-family: 'Sniglet', sans-serif;
+  font-family: 'Lobster', sans-serif;
 }
 
 body {
-  font-family: 'Sniglet', sans-serif;
+  font-family: 'Lobster', sans-serif;
 }
 
 body {
@@ -57,16 +57,12 @@ body {
   margin-bottom: 10px;
   overflow: auto;
   background: url("/assets/deskchaircombo.jpg");
-  background-repeat: repeat;
-  background-position: center;
-  background-position-x: 100px;
-  background-position-y: 0px;
-  background-size: 70%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .headSec h1 {
-  color: #b3e0ff;
-  background-color: rgba(0, 0, 0, 0.3);
+  color: #5c64a6;
   font-size: 80px;
   padding: 15px;
 }
