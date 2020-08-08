@@ -5,8 +5,10 @@
 
 <% @users.each do |user| %>
 
-<p>Email Address: <%= user.email %></p>
-<p>Admin: <%= user.admin %></p>
+<p>User Id:<%= user.id %> Email Address: <%= user.email %> Admin: <%= user.admin %>
+<a href="/upgrade/<%= user.id %>" class="button">Upgrade <%= user.email %> Admin</a>
+<a href="/downgrade/<%= user.id %>" class="button">Downgrade <%= user.email %> Admin</a>
+</p>
 
 
 <% end %>

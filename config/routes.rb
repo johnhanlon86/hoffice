@@ -22,6 +22,8 @@ Rails.application.routes.draw do
   
   get '/help' => 'static_pages#help'
 
+  get '/aboutSend/:id' => 'static_pages#aboutSend'
+
   get '/cart', to: 'cart#index'
 
   get '/cart/:id', to: 'cart#add'
@@ -43,6 +45,11 @@ Rails.application.routes.draw do
   get 'category/:title', to: 'static_pages#category'
 
   post '/search' => 'items#search'
+
+  get '/upgrade/:id' => 'static_pages#upgrade'
+
+  get '/upgrade/:id' => 'static_pages#downgrade'
+
 
   #root :to => 'site#home'
 
