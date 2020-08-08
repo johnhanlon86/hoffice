@@ -12,14 +12,15 @@ class StaticPagesController < ApplicationController
    
    def admin
     if current_user.admin?
-    @users = User.all
-    else
-  
+      @users = User.all
+
+    else 
+
       redirect_to "/"
    endd
     
    
-   
+  
    
    def upgrade 
     @user = User.find_by(id: params[:id])
