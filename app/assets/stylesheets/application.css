@@ -63,6 +63,7 @@ body {
 
 .headSec h1 {
   color: #5c64a6;
+  text-shadow: 5px 5px 5px black; 
   font-size: 80px;
   padding: 15px;
 }
