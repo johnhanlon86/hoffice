@@ -53,11 +53,11 @@ body {
 .headSec {
   background-color: #b3e0ff;
   width: 100%;
-  height: 300px;
-  overflow: auto;
+  height: 200px;
   background: url("/assets/deskchaircombo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  margin-top: 0px;
 }
 
 .headSec h1 {
@@ -65,13 +65,16 @@ body {
   text-shadow: 5px 5px 5px black; 
   font-size: 80px;
   padding: 15px;
+  padding-bottom: 0px;
+  padding-top: 3%;
+  margin-left: 2%;
+  margin-top: 0px;
 }
 
 .headSec h2 {
   color: #7ed957;
   text-shadow: 5px 5px 5px black; 
   font-size: 60px;
-  padding: 15px;
   text-align: center;
 }
 
@@ -79,10 +82,11 @@ ul {
   font-size: 30px;
   font-family: 'Lobster', sans-serif;
   margin: 0;
-  padding: 0;
+  padding-left: 2%;
   overflow: hidden;
   background-color: #7ed957;
   list-style: none;
+  box-shadow: inset 0 0 5px rgba(0,0,0,.5);
 }
 
 li {
@@ -93,7 +97,7 @@ li a {
   display: block;
   color: #ffffff;
   text-align: center;
-  padding: 14px 16px;
+  padding: 16px 16px;
   text-decoration: none;
 }
 
@@ -118,16 +122,20 @@ li a {
 }
 
 .container {
-  background: url("/assets/Site/clubhead.png");
+  background-color: #5c64a6;
   background-repeat: no-repeat;
   background-position: right bottom;
   width: 100%;
-  min-height: 700px;
+}
+
+form {
+  float: right;
+  margin-right: 5%;
 }
 
 input[type="text"],
 select {
-  width: 100%;
+
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -137,7 +145,6 @@ select {
 }
 
 input[type="submit"] {
-  width: 100%;
   background-color: #4caf50;
   color: white;
   padding: 14px 20px;
