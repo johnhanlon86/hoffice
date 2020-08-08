@@ -17,7 +17,9 @@ class StaticPagesController < ApplicationController
     else 
 
       redirect_to "/"
-   endd
+   end
+
+  end
     
    
   
@@ -59,5 +61,3 @@ class StaticPagesController < ApplicationController
 
 end
 
-
-end
