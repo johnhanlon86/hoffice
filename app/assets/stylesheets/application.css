@@ -67,6 +67,14 @@ body {
   padding: 15px;
 }
 
+.headSec h2 {
+  color: #7ed957;
+  text-shadow: 5px 5px 5px black; 
+  font-size: 60px;
+  padding: 15px;
+  text-align: center;
+}
+
 ul {
   font-size: 30px;
   font-family: 'Lobster', sans-serif;

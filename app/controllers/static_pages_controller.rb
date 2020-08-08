@@ -9,7 +9,7 @@ class StaticPagesController < ApplicationController
 
   def admin 
     if current_user.admin?
-     # @users = User.all
+      @users = User.all
 
     else 
 
