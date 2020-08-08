@@ -14,16 +14,36 @@
  *= require_self
  */
 
+/*
+STYLE GUIDE FOR HOFFICE
+
+COLOUR PALLETTE:
+Primary Colour: #5c64a6
+Secondary Colour: #7ed957 
+
+FONT: Sniglet
+https://fonts.google.com/specimen/Sniglet?preview.text=HOFFICE&preview.text_type=custom
+
+*/
+
+/*
+@import url('fonts.googleapis.com/css?family=Sniglet');
+@import url('//fonts.googleapis.com/css?family=Sniglet');
+@import url('https://fonts.googleapis.com/css?family=Sniglet');
+@import url('//fonts.googleapis.com/css?family=Sniglet:400,700,900&display=swap');
+*/
+
 * {
   /* CSS RESET */
 }
 
 p {
   line-height: 20px;
+  font-family: 'Sniglet', sans-serif;
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Sniglet', sans-serif;
 }
 
 body {
