@@ -17,17 +17,34 @@ body {
 .slider-wrapper {
     display: grid;
     grid-template-columns: repeat(1, 100%);
-    
+  
     section {
         width: 100%;
         height: 55vh;
         position: relative;
         display: gird;
         grid-template-columns: repeat(3, auto);
-        margin: 20px 0;
+        
+        .title-chairs {
+            font-size: 100px;
+            padding-top: 10%;
+            color:#5c64a6;
+        }
 
+        .title-desks {
+            font-size: 100px;
+            padding-top: 10%;
+            color:#7ed957;
+        }
+
+        .title-lights {
+            font-size: 100px;
+            padding-top: 10%;
+            color:#5c64a6;
+        }
+        
         .item1 {
-            height: 100%;
+            height: 80%;
             padding: 0 2px;
             transition: $duration all;
             background: url("/assets/bucketchair.jpg");
@@ -42,7 +59,7 @@ body {
         }
 
         .item2 {
-            height: 100%;
+            height: 80%;
             padding: 0 2px;
             transition: $duration all;
             background: url("/assets/darkoakdesk.jpg");
@@ -57,7 +74,7 @@ body {
         }
 
         .item3 {
-            height: 100%;
+            height: 80%;
             padding: 0 2px;
             transition: $duration all;
             background: url("/assets/desklight.jpg");
@@ -125,5 +142,21 @@ body {
             background: none;
         }
     }
+
+    .section1 {
+        text-align: center;
+    }
+
+    .section2 {
+        text-align: left;
+        p {
+            padding-left: 15%;
+        }
+    }
+
+    .section3 {
+        text-align: center;
+    }
+
 }
 
