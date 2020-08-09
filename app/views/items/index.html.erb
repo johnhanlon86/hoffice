@@ -4,6 +4,8 @@
 
 <h1>Items</h1>
 
+
+
 <% @items.each do |item| %>
 <div class="itemhols">
 <h1><%= item.title %></h1>
@@ -30,6 +32,9 @@
 <% end %>
 
 </div>
+
+<h2>Our Best Seller</h2>
+<%=render 'layouts/popular'%>
 
 <br>
 <% if user_signed_in? %>
