@@ -19,6 +19,9 @@
           <a href="/">
           <h2>"Work Remote in Style"</h2>   
        </a> 
+
+               <%=render 'layouts/search'%> 
+
     </header>
 
     <div class = "navbar">
@@ -41,8 +44,6 @@
           <li><%= link_to 'Register', new_user_registration_path %></li>
           <li><%= link_to 'Sign in', new_user_session_path %></li>
         <% end %>
-
-        <%=render 'layouts/search'%> 
        
       </ul>
       </div>
