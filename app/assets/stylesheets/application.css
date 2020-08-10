@@ -246,6 +246,60 @@ input[type="submit"]:hover {
 
 /*///////// HELP END /////////*/
 
+/*///////// PAYMENT THANK YOU START /////////*/
+
+.paymentThankYouContainerOuter {
+  height: 500px;
+  width: 100%;
+  background-color: #b3e0ff;
+  background: url("/assets/signaturechair.jpg");
+  background-position: center;
+  background-size: 50%;
+}
+
+.thankYouSpacer {
+  width: 100px;
+  height: 50px;
+}
+
+.thankYouContainerMiddle {
+  margin: auto;
+  height: 500px;
+  width: 80%;
+  background-color: #b3e1ffe1;
+  text-align: center;
+}
+
+.thankYouContainerMiddle h1 {
+  margin-top: 20px;
+  color: #5c64a6;
+  font-size: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.295);
+  border-width: 50px;
+  text-decoration: underline;
+}
+.thankYouContainerMiddle h2 {
+  color: #4caf50;
+}
+
+.thankYouContainerMiddle a {
+  text-decoration: none;
+}
+
+.backToItemsPageButton {
+  margin: auto;
+  background-color: #4caf50;
+  border-radius: 10px;
+  padding: 20px;
+  width: 50%;
+}
+
+.backToItemsPageButton p {
+  margin-top: 100px;
+}
+
+/*///////// PAYMENT THANK YOU END /////////*/
+
 /*///////// FOOTER START /////////*/
 
 .footer {
