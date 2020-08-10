@@ -13,6 +13,8 @@ class OrdersController < ApplicationController
   # GET /orders/1.json
   def show
     @orderitems = Orderitem.all
+
+  
   end
 
   # GET /orders/new
