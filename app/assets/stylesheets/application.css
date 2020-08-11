@@ -90,7 +90,6 @@ body {
 }
 
 ul {
-  width: 100%;
   font-size: 20px;
   font-family: "Lobster", sans-serif;
   margin: 0;
@@ -356,6 +355,16 @@ input[type="submit"]:hover {
   background-color: #5c8ba6;
   text-align: center;
   padding-top: 4vh;
+}
+
+.footermiddleright h2 {
+  color: white;
+  font-size: 3vh;
+  text-shadow: 1px 1px 1px black;
+}
+
+a:link {
+  text-decoration: none;
 }
 
 .footer ul {
