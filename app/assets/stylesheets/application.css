@@ -354,13 +354,14 @@ input[type="submit"]:hover {
   width: 50%;
   background-color: #5c8ba6;
   text-align: center;
-  padding-top: 4vh;
+  padding-top: 1vh;
 }
 
 .footermiddleright h2 {
   color: white;
   font-size: 3vh;
   text-shadow: 1px 1px 1px black;
+  font-weight: lighter;
 }
 
 a:link {
