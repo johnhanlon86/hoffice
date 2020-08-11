@@ -135,10 +135,12 @@ li a {
 }
 
 .container {
-  background-color: #5c64a6;
+  background-color: #5c8ba6;
   background-repeat: no-repeat;
   background-position: right bottom;
   width: 100%;
+  /* clear: both; */
+  /* display: flex; */
 }
 
 form {
@@ -178,7 +180,7 @@ input[type="submit"]:hover {
 
 .aboutPageContainer {
   width: 100%;
-  height: 700px;
+  height: 75%;
   background: url("/assets/OfficeBackground.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -187,7 +189,7 @@ input[type="submit"]:hover {
 .aboutPageInnerContainer {
   margin: auto;
   width: 70%;
-  height: 100%;
+  height: 75%;
   background-color: #b3e1ffe1;
   padding: 70px;
 }
@@ -206,7 +208,7 @@ input[type="submit"]:hover {
 
 .helpPageContainer {
   width: 100%;
-  height: 900px;
+  height: 75%;
   background: url("/assets/OfficeBackground.jpg");
   background-repeat: repeat;
   background-position: center;
@@ -215,9 +217,23 @@ input[type="submit"]:hover {
 .helpPageInnerContainer {
   margin: auto;
   width: 70%;
-  height: 100%;
+  height: 75%;
   background-color: #b3e1ffe1;
   padding: 70px;
+}
+
+.new-user {
+  float: none;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-form {
+  float: none;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .detailsinput {
@@ -226,6 +242,7 @@ input[type="submit"]:hover {
   background-color: rgba(255, 255, 255, 0.527);
   width: 100%;
   height: 550px;
+  display: flex;
 }
 
 .detailsinput label {
