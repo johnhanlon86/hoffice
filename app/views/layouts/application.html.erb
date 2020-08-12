@@ -49,11 +49,13 @@
         <li>
         <a>
         Items in Cart:
-        <% Orderitem.all.each do |orderitem| %>
-          <%= orderitem.quantity %>
-        <% end %>
+        
+          <%= session[:cart] %>
+        
         </a>
         </li>
+
+
 
       </ul>
     
