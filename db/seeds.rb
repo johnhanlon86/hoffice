@@ -6,4 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-items = Item.create([{ title: 'Boss Chair', description: 'Chair for Bosses', price: 250, image_url: 'chair.jpg', category: 'Chairs', brand: 'Hoffice Boss' }])
+items = Item.create([
+    { title: 'Boss Chair', description: 'Chair for Bosses', price: 250, image_url: 'chair.jpg', category: 'Chairs', brand: 'Hoffice Boss' }
+])

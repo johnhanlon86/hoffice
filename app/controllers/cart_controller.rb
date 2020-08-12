@@ -106,6 +106,12 @@ before_action :authenticate_user!
 
   end
 
+  def total_quantity
+    if session[:cart] then
+      @orderitems.sum(:quantity)
+    end  
+  end
+
 end 
 
 
