@@ -106,6 +106,18 @@ before_action :authenticate_user!
 
   end
 
+  #def total_quantity
+  #  orderitems.sum(:quantity)
+  #end
+
+  #def current_order
+  #  if !session[:id].nil?
+  #    Order.find(session[:id])
+  #  else
+  #    Order.new  
+  #  end
+  #end
+
 end 
 
 
