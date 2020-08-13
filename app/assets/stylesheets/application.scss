@@ -113,6 +113,27 @@ li a {
   text-decoration: none;
 }
 
+.itemsInCart {
+  text-decoration: none !important;
+  background-color: none !important;
+  color: none !important;
+  background-color: unset !important;
+}
+
+.cartEmpty {
+  text-decoration: none !important;
+  background-color: none !important;
+  color: none !important;
+  background-color: unset !important;
+}
+
+.cartTotal {
+  text-decoration: none !important;
+  background-color: none !important;
+  color: none !important;
+  background-color: unset !important;
+}
+
 .mainCont {
   margin: auto;
   width: 80%;
@@ -183,6 +204,12 @@ input[type="submit"]:hover {
   background: url("/assets/OfficeBackground.jpg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.aboutPageContainer:hover {
+  background-color: none !important;
+  color: none !important;
+  background-color: unset !important;
 }
 
 .aboutPageInnerContainer {

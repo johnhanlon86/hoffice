@@ -42,7 +42,7 @@
           <li><%= link_to 'Sign out', destroy_user_session_path, :method => :delete %></li>
           <li><a href="/cart" >Cart</a></li>
           <li><a href="/orders">View Orders</a></li>
-          <li> <a> Items in Cart: <%= @currentCart = session[:cart] %> </a> </li>
+          <li> <a class="itemsInCart"> Items in Cart: <%= @currentCart = session[:cart] %> </a> </li>
        
         <% if @currentCart %>
              
@@ -62,9 +62,9 @@
 
         <% end %>
 
-        <li> <a> Cart Total:  <%= number_to_currency(total, :unit => "€") %> </a> </li>
+        <li> <a class="cartTotal"> Cart Total:  <%= number_to_currency(total, :unit => "€") %> </a> </li>
         <% else %>
-        <li> <a>Cart Empty<a/> </li>
+        <li> <a class="cartEmpty">Cart Empty<a/> </li>
         <% end %>
        
         <% else %>
@@ -97,8 +97,7 @@
           </div>
 
           <div class = "footermiddleright">           
-            <h2> Where are we ? </h2> 
-            <a href="https://www.google.ie/maps/place/Dublin"><h2>Location Here!</h2></a>
+            <a href="https://www.google.ie/maps/place/Dublin"><h2>Where are we ?</h2></a>
           </div>
 
       </div>
