@@ -12,7 +12,7 @@ items = Item.create([
     { title: 'Walnut Desk', description: 'A walnut desk for when you feel like doing some work!', price: 150, image_url: 'WalnutDesk.jpg', category: 'Desks', brand: 'Workmans' }
 ])
 
-users = User.create([
-    { email: 'smono89@gmail.com', encrypted_password: 'password1', admin: true},
-    { email: 'howedaryl@gmail.com', encrypted_password: 'password2', admin: true}
-])
+
+User.create!(email: 'user@gmail.com', password: 'user1234', password_confirmation: 'user1234')
+User.create!(email: "admin@gmail.com", password: "admin1234", password_confirmation: "admin1234", admin: true)
+
