@@ -44,7 +44,7 @@ p {
 
 body {
   font-family: "Lobster", sans-serif;
-  background-color: #ffffff;
+  background-color: #7ed957;
 }
 
 .headSec {
@@ -160,12 +160,25 @@ li a {
   background-position: right bottom;
   width: 100%;
   /* clear: both; */
-  /* display: flex; */
+  display: flex;
 }
 
 form {
+  margin-right: 5%;
+  float: none;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Lobster", sans-serif;
+}
+
+.field {
   float: right;
   margin-right: 5%;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Lobster", sans-serif;
 }
 
 input[type="text"],
@@ -207,6 +220,7 @@ input[type="submit"]:hover {
 }
 
 .aboutPageContainer:hover {
+  text-decoration: none !important;
   background-color: none !important;
   color: none !important;
   background-color: unset !important;
