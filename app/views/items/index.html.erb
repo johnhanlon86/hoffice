@@ -2,14 +2,15 @@
 
 <div id="itemsContainer">
 
-<h1>Items</h1>
+<h1 id =itemsTitle"">Items</h1>
 
 
-
+<div class = "itemSingleContainer">
 <% @items.each do |item| %>
 <div class="itemhols">
 <h1><%= item.title %></h1>
-<h1>Id Is: <%= item.id %></h1>
+
+<!-- <h1>Id Is: <%= item.id %></h1> -->
 
 <%= link_to (image_tag item.image_url, :class => "itemholsIm"), item %>
 <p><%= item.description %></p>
@@ -23,21 +24,21 @@
 <%= link_to 'Show',  item, :class => "button", :role => "button" %>
 <a href="/cart/<%= item.id %>" class="button">Add to Cart</a>
 
- <% if user_signed_in? %>
+ <% if user_signed_in? && current_user.admin? %>
 <%= link_to 'Edit',  edit_item_path(item), :class => "button", :role => "button" %>
 <%= link_to 'Destroy',  item, method: :delete, data: { confirm: 'Are you sure?' }, :class => "button", :role => "button" %>
 </p>
 <% end %>
 </div>
 <% end %>
+</div>
 
 </div>
 
-<h2>Our Best Seller</h2>
-<%=render 'layouts/popular'%>
+
 
 <br>
-<% if user_signed_in? %>
+<% if user_signed_in? && current_user.admin? %>
 <%= link_to 'New Item',  new_item_path, :class => "button", :role => "button" %>
 <%= link_to 'New Category', new_category_path, :class =>"button", :role=>"button"  %>
 </div>

@@ -11,3 +11,8 @@ items = Item.create([
     { title: 'Workmans Couch', description: 'The Working Mans Couch', price: 380, image_url: 'WorkmansCouch.jpg', category: 'Chairs', brand: 'Workmans' },
     { title: 'Walnut Desk', description: 'A walnut desk for when you feel like doing some work!', price: 150, image_url: 'WalnutDesk.jpg', category: 'Desks', brand: 'Workmans' }
 ])
+
+
+User.create!(email: 'user@gmail.com', password: 'user1234', password_confirmation: 'user1234')
+User.create!(email: "admin@gmail.com", password: "admin1234", password_confirmation: "admin1234", admin: true)
+

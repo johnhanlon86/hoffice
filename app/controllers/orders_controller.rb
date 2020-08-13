@@ -14,7 +14,7 @@ class OrdersController < ApplicationController
   def show
     @orderitems = Orderitem.all
 
-  
+
   end
 
   # GET /orders/new
