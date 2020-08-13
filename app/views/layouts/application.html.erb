@@ -33,7 +33,6 @@
         <li><%= link_to "Items", "/products" %></li>
         <li><%= link_to "About", about_path %></li>
         <li><%= link_to "Help", help_path %></li>
-        <li><a href="/cart" >Cart</a></li>
         <!--<li><%= link_to "View Cart", "/cart" %></li> -->
 
 
@@ -41,6 +40,7 @@
           <li><a href="#">Hi <%= current_user.email %></a></li>
           <li><%= link_to 'Edit Profile', edit_user_registration_path %></li>
           <li><%= link_to 'Sign out', destroy_user_session_path, :method => :delete %></li>
+          <li><a href="/cart" >Cart</a></li>
           <li><a href="/orders">View Orders</a></li>
         <% else %>
           <li><%= link_to 'Register', new_user_registration_path %></li>
@@ -74,17 +74,13 @@
 
         <% end %>
 
-        <li>
-        <a>
-        Cart Total:
-        <%= number_to_currency(total, :unit => "€") %>
-        </a>
-        </li>
-
+        <li> <a> Cart Total:  <%= number_to_currency(total, :unit => "€") %> </a> </li>
         <% else %>
-        <li>
-          <a>Cart Empty<a/>
-        </li>
+        <li> <a>Cart Empty<a/> </li>
+        <% end %>
+        <% else %>
+          <li><%= link_to 'Register', new_user_registration_path %></li>
+          <li><%= link_to 'Sign in', new_user_session_path %></li>
         <% end %>
 
     </ul>
