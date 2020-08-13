@@ -163,9 +163,14 @@ li a {
   display: flex;
 }
 
+.searchBar {
+  display: inline-block;
+}
+
 form {
   margin-right: 5%;
-  float: none;
+  padding-right: 5%;
+  float: right;
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
