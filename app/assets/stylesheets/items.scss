@@ -26,6 +26,17 @@
   border: 3px dashed #5c63a617;
 }
 
+.itemholsshow {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 40%;
+  min-height: 150px;
+  background-color: #5c63a617;
+  border: 3px dashed #5c63a617;
+}
+
 .itemhols img {
   height: 170px;
   width: 220px;
@@ -74,4 +85,9 @@
 
 .itemSingleContainer {
   background: #b3e1ffe1;
+}
+
+.imageBig img {
+  width: 40%;
+  height: 40%;
 }
