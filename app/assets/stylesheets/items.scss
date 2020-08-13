@@ -19,11 +19,17 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
-  display: inline-block;
-  width: 22%;
+  width: 100%;
   min-height: 500px;
   background-color: #5c63a617;
   border: 3px dashed #5c63a617;
+}
+
+@media only screen and (min-width: 768px) {
+  .itemhols {
+    width: 22%;
+    display: inline-block;
+  }
 }
 
 .itemholsshow {

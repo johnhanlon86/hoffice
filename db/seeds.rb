@@ -9,7 +9,7 @@
 items = Item.create([
     { title: 'Boss Chair', description: 'Chair for Bosses', price: 250, image_url: 'chair.jpg', category: 'Chairs', brand: 'Hoffice Boss' },
     { title: 'Workmans Couch', description: 'The Working Mans Couch', price: 380, image_url: 'WorkmansCouch.jpg', category: 'Chairs', brand: 'Workmans' },
-    { title: 'Walnut Desk', description: 'A walnut desk for when you feel like doing some work!', price: 150, image_url: 'WalnutDesk.jpg', category: 'Desks', brand: 'Workmans' }
+    { title: 'Walnut Desk', description: 'When you feel like Working!', price: 150, image_url: 'WalnutDesk.jpg', category: 'Desks', brand: 'Workmans' }
 ])
 
 

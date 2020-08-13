@@ -37,6 +37,10 @@ https://fonts.google.com/specimen/Lobster?preview.text=Hoffice+Furniture&preview
   /* CSS RESET */
 }
 
+img {
+  max-width: 100%;
+}
+
 p {
   line-height: 20px;
   font-family: "Lobster", sans-serif;
@@ -44,7 +48,7 @@ p {
 
 body {
   font-family: "Lobster", sans-serif;
-  background-color: #ffffff;
+  background-color: #7ed957;
 }
 
 .headSec {
@@ -113,6 +117,27 @@ li a {
   text-decoration: none;
 }
 
+.itemsInCart {
+  text-decoration: none !important;
+  background-color: none !important;
+  color: none !important;
+  background-color: unset !important;
+}
+
+.cartEmpty {
+  text-decoration: none !important;
+  background-color: none !important;
+  color: none !important;
+  background-color: unset !important;
+}
+
+.cartTotal {
+  text-decoration: none !important;
+  background-color: none !important;
+  color: none !important;
+  background-color: unset !important;
+}
+
 .mainCont {
   margin: auto;
   width: 80%;
@@ -139,12 +164,30 @@ li a {
   background-position: right bottom;
   width: 100%;
   /* clear: both; */
-  /* display: flex; */
+  display: flex;
+}
+
+.searchBar {
+  display: inline-block;
 }
 
 form {
+  margin-right: 5%;
+  padding-right: 5%;
+  float: right;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Lobster", sans-serif;
+}
+
+.field {
   float: right;
   margin-right: 5%;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Lobster", sans-serif;
 }
 
 input[type="text"],
@@ -183,6 +226,13 @@ input[type="submit"]:hover {
   background: url("/assets/OfficeBackground.jpg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.aboutPageContainer:hover {
+  text-decoration: none !important;
+  background-color: none !important;
+  color: none !important;
+  background-color: unset !important;
 }
 
 .aboutPageInnerContainer {
@@ -327,9 +377,9 @@ input[type="submit"]:hover {
 .footer {
   float: left;
   width: 100%;
-  height: 10vh;
+  height: 90px;
   /*background-color: #b3e0ff;*/
-  /*border: 2px solid #b3e0ff;*/
+  border-top: 20px solid #7ed957c4;
 }
 
 .footerleft {
@@ -359,16 +409,16 @@ input[type="submit"]:hover {
   float: left;
   height: 100%;
   width: 50%;
-  background-color: #5c8ba6;
+  background-color: #7ed957;
   text-align: center;
-  padding-top: 4vh;
+  padding-top: 1vh;
 }
 
 .footermiddleright {
   float: left;
   height: 100%;
   width: 50%;
-  background-color: #5c8ba6;
+  background-color: #7ed957;
   text-align: center;
   padding-top: 1vh;
 }
