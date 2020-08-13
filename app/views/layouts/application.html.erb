@@ -46,15 +46,44 @@
           <li><%= link_to 'Register', new_user_registration_path %></li>
           <li><%= link_to 'Sign in', new_user_session_path %></li>
         <% end %>
-       
+
         <li>
         <a>
         Items in Cart:
 
-          <%= @currentCart = session[:cart] %>
+        <%= @currentCart = session[:cart] %>
             
         </a>
         </li>
+        
+        <% if @currentCart %>
+             
+        <% total = 0 %>
+
+        <% @currentCart.each do |id, quantity| %>
+
+        <% item = Item.find_by_id(id) %>
+
+        <% number_to_currency(item.price, :unit =>"€") %>
+
+        <% quantity %>
+
+        <% number_to_currency(quantity * item.price, :unit =>"€") %>
+
+        <% total += quantity * item.price %>
+
+        <% end %>
+
+        <li>
+        <a>
+        Cart Total:
+        <%= number_to_currency(total, :unit => "€") %>
+        </a>
+        </li>
+
+        <% else %>
+          <li><a>Cart Empty<a/></li>
+        <% end %>
 
       </ul>
     

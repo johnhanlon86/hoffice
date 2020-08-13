@@ -21,15 +21,11 @@ class StaticPagesController < ApplicationController
 
   end
     
-   
-  
-   
    def upgrade 
     @user = User.find_by(id: params[:id])
     @user.update_attribute :admin, true
     redirect_to "/admin"
    end
-   
    
     def downgrade 
     @user = User.find_by(id: params[:id])
@@ -37,17 +33,10 @@ class StaticPagesController < ApplicationController
     redirect_to "/admin"
    end
 
-
   def category
     catName = params[:title]
         @items = Item.where("category like ? ", catName)
     end
-    
-
-  #def category
-  #  catName = params[:title]
-  #  @items = Item.where("category like ?", catName)
-  #end
 
   def paid
     @order = Order.find_by(id: params[:id])
