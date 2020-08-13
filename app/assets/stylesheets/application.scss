@@ -327,9 +327,9 @@ input[type="submit"]:hover {
 .footer {
   float: left;
   width: 100%;
-  height: 10vh;
+  height: 90px;
   /*background-color: #b3e0ff;*/
-  /*border: 2px solid #b3e0ff;*/
+  border-top: 20px solid #7ed957c4;
 }
 
 .footerleft {
@@ -359,7 +359,7 @@ input[type="submit"]:hover {
   float: left;
   height: 100%;
   width: 50%;
-  background-color: #5c8ba6;
+  background-color: #7ed957;
   text-align: center;
   padding-top: 1vh;
 }
@@ -368,7 +368,7 @@ input[type="submit"]:hover {
   float: left;
   height: 100%;
   width: 50%;
-  background-color: #5c8ba6;
+  background-color: #7ed957;
   text-align: center;
   padding-top: 1vh;
 }
