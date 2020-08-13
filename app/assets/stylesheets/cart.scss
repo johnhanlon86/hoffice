@@ -1,28 +1,56 @@
 // Place all the styles related to the Cart controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.spacerCartEmpty {
+  height: 80px;
+  width: 100%;
+}
+.cartContainer {
+  margin: auto;
+  width: 100%;
+  min-height: 300px;
+  background-color: white;
+}
+
 #customers {
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-    }
-    
-    #customers td, #customers th {
-    border: 1px solid #ddd;
-    padding: 8px;
-    }
-    
-    #customers tr:nth-child(even){background-color: #f2f2f2;}
-    
-    #customers tr:hover {background-color: #ddd;}
-    
-    #customers th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #4CAF50;
-    color: white;
-    }
-    
-    
-    
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  border: 3px dashed #45a049;
+  margin: auto;
+}
+
+#customers td,
+#customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  color: black;
+  width: 80px;
+  height: 100px;
+  background-color: #b3e1ff59;
+}
+
+#customers tr:nth-child(even) {
+  background-color: #b3e1ff59;
+}
+
+#customers tr:hover {
+  background-color: #ddd;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4caf50;
+  color: white;
+}
+
+.total td {
+  background-color: pink;
+}
+
+.image img {
+  height: 300px;
+  width: 100px;
+}
