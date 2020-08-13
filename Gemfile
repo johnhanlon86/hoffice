@@ -43,8 +43,8 @@ group :development do
   gem 'sqlite3', '~> 1.4'
 end
 
- 
 group :production , :staging do
+# To facilitate Heroku deployment
 gem 'pg'
 gem 'rails_12factor'
 end
