@@ -2,14 +2,15 @@
 
 <div id="itemsContainer">
 
-<h1>Items</h1>
+<h1 id =itemsTitle"">Items</h1>
 
 
-
+<div class = "itemSingleContainer">
 <% @items.each do |item| %>
 <div class="itemhols">
 <h1><%= item.title %></h1>
-<h1>Id Is: <%= item.id %></h1>
+
+<!-- <h1>Id Is: <%= item.id %></h1> -->
 
 <%= link_to (image_tag item.image_url, :class => "itemholsIm"), item %>
 <p><%= item.description %></p>
@@ -30,6 +31,7 @@
 <% end %>
 </div>
 <% end %>
+</div>
 
 </div>
 
