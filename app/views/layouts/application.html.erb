@@ -15,7 +15,7 @@
 
     <header class="headSec">
        <a href="/">
-          <h1>Hoffice</h1>  
+          <h1>Hoffice</h1> 
         </a>
           <a href="/">
           <h2>"Work Remote in Style"</h2>   
@@ -29,7 +29,7 @@
     <div class = "navbar">
     <ul>
         <li><%= link_to "Home", "/"  %></li>
-        
+       
         <li><%= link_to "Items", "/products" %></li>
         <li><%= link_to "About", about_path %></li>
         <li><%= link_to "Help", help_path %></li>
@@ -42,20 +42,8 @@
           <li><%= link_to 'Sign out', destroy_user_session_path, :method => :delete %></li>
           <li><a href="/cart" >Cart</a></li>
           <li><a href="/orders">View Orders</a></li>
-        <% else %>
-          <li><%= link_to 'Register', new_user_registration_path %></li>
-          <li><%= link_to 'Sign in', new_user_session_path %></li>
-        <% end %>
-
-        <li>
-        <a>
-        Items in Cart:
-
-        <%= @currentCart = session[:cart] %>
-        
-        </a>
-        </li>
-        
+          <li> <a> Items in Cart: <%= @currentCart = session[:cart] %> </a> </li>
+       
         <% if @currentCart %>
              
         <% total = 0 %>
@@ -78,6 +66,7 @@
         <% else %>
         <li> <a>Cart Empty<a/> </li>
         <% end %>
+       
         <% else %>
           <li><%= link_to 'Register', new_user_registration_path %></li>
           <li><%= link_to 'Sign in', new_user_session_path %></li>
@@ -85,9 +74,9 @@
 
     </ul>
 
-  
+ 
 
-    
+   
 
     </div>
 
@@ -99,24 +88,23 @@
 
 <footer class="footer">
 
-			<div class = "footermiddle">
+      <div class = "footermiddle">
 
-		    	<div class = "footermiddleleft">
+          <div class = "footermiddleleft">
             <a href="#" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-twitter"></a>
             <a href="#" class="fa fa-instagram"></a>
           </div>
 
-          <div class = "footermiddleright">            
+          <div class = "footermiddleright">           
             <h2> Where are we ? </h2> 
             <a href="https://www.google.ie/maps/place/Dublin"><h2>Location Here!</h2></a>
           </div>
 
-			</div>
+      </div>
 
 
 
 </footer>
   </body>
 </html>
-
